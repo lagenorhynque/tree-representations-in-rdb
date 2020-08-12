@@ -31,3 +31,20 @@ INSERT INTO `department_adjacency_list` (`department_id`, `parent_id`) VALUES
 (13, 10),
 (14, 10),
 (15, 13);
+
+INSERT INTO `department_path_enumeration` (`department_id`, `path`) VALUES
+(1, '1/'),
+(2, '2/'),
+(3, '3/'),
+(4, '1/4/'),
+(5, '1/5/'),
+(6, '2/6/'),
+(7, '2/7/'),
+(8, '2/8/'),
+(9, '2/9/'),
+(10, '3/10/'),
+(11, '2/6/11/'),
+(12, '2/9/12/'),
+(13, '3/10/13/'),
+(14, '3/10/14/'),
+(15, '3/10/13/15/');
