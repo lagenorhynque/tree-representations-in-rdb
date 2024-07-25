@@ -2,11 +2,11 @@ SHELL:=/bin/bash
 
 .PHONY: mysql
 mysql:
-	@docker-compose exec mariadb mysql -udev -ppass tree
+	@docker compose exec mysql mysql -udev -ppass tree
 
 .PHONY: mysql-wo-tty
 mysql-wo-tty:
-	@docker-compose exec -T mariadb mysql -udev -ppass tree
+	@docker compose exec -T mysql mysql -udev -ppass tree
 
 .PHONY: migrate
 migrate:
